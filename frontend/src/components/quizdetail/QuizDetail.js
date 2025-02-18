@@ -13,7 +13,7 @@ const QuizDetails = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/quizzes/${id}`)
+      .get(`https://drivingschool-backend.onrender.com/api/quizzes/${id}`)
       .then((response) => setQuiz(response.data))
       .catch((error) => console.error("Erreur lors du chargement du quiz", error));
   }, [id]);

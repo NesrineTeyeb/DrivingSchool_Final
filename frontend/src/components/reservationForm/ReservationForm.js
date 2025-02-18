@@ -19,7 +19,7 @@ const ReservationForm = () => {
       try {
         const token = localStorage.getItem("authToken");
         const response = await axios.get(
-          `http://localhost:5000/api/reservations`,
+          `https://drivingschool-backend.onrender.com/api/reservations`,
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -68,7 +68,7 @@ const ReservationForm = () => {
   
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/reservations",
+        "https://drivingschool-backend.onrender.com/api/reservations",
         values,
         {
           headers: {

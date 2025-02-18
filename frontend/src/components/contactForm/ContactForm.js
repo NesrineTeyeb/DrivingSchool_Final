@@ -37,7 +37,7 @@ function ContactForm() {
   
     try {
       // Envoi des données au backend
-      const response = await axios.post("http://localhost:5000/api/contact", formData);
+      const response = await axios.post("https://drivingschool-backend.onrender.com/api/contact", formData);
   
       console.log("Message sent:", response.data);
       

@@ -43,7 +43,7 @@ const ReservationList = () => {
   // Annuler une réservation
   const handleCancelReservation = async (reservationId) => {
     try {
-      await axios.delete(`http://localhost:5000/api/reservations/${reservationId}`);
+      await axios.delete(`https://drivingschool-backend.onrender.com/reservations/${reservationId}`);
       setReservations((prev) => prev.filter((r) => r._id !== reservationId));
     } catch (error) {
       console.error("Error canceling reservation:", error);

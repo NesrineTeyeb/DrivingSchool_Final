@@ -20,7 +20,7 @@ const CourseList = () => {
     setIsLoading(true); // Set loading to true before fetching data
 
     axios
-      .get("http://localhost:5000/api/courses", {
+      .get("https://drivingschool-backend.onrender.com/api/courses", {
         headers: {
           Authorization: `Bearer ${token}`, // Include token in request headers
         },

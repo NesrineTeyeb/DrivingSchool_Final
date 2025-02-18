@@ -67,7 +67,7 @@ const PaymentForm = () => {
         return;
       }
 
-      const response = await axios.post("http://localhost:5000/api/payment", {
+      const response = await axios.post("https://drivingschool-backend.onrender.com/api/payment", {
         amount: 50,
         currency: "eur",
         paymentMethodId: paymentMethod.id,
