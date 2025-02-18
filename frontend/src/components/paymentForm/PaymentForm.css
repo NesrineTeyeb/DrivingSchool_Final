@@ -1,0 +1,152 @@
+/* Fond de la page */
+.payment-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f7f9fc;
+  padding: 20px;
+}
+
+/* Carte du formulaire */
+.payment-form-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Titre principal */
+.payment-form-card h2 {
+  color: #32325d;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 24px;
+}
+
+/* Montant à payer */
+.payment-amount {
+  text-align: center;
+  font-size: 18px;
+  color: #525f7f;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+/* Groupe de formulaire */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+/* Label du formulaire */
+.form-group label {
+  display: block;
+  color: #32325d;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+/* Champ de formulaire */
+.form-control {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.2s ease;
+}
+
+/* Champ de formulaire en focus */
+.form-control:focus {
+  outline: none;
+  border-color: #6772e5;
+  box-shadow: 0 0 0 1px #6772e5;
+}
+
+/* Conteneur de l'élément de carte */
+.card-element-container {
+  padding: 12px;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+  background: white;
+  transition: border-color 0.2s ease;
+}
+
+/* Conteneur de l'élément de carte en focus */
+.card-element-container:focus-within {
+  border-color: #6772e5;
+  box-shadow: 0 0 0 1px #6772e5;
+}
+
+/* Bouton de soumission */
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background: #5469d4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Bouton de soumission en survol */
+.submit-button:hover {
+  background: #4a5fc1;
+}
+
+/* Bouton de soumission désactivé */
+.submit-button:disabled {
+  background: #93a3e1;
+  cursor: not-allowed;
+}
+
+/* Bouton de soumission en cours de chargement */
+.submit-button.loading {
+  background: #93a3e1;
+  cursor: wait;
+}
+
+/* Message de retour */
+.message {
+  margin: 1rem 0;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Message d'erreur */
+.message.error {
+  background: #ffe6e6;
+  color: #ff3333;
+  border: 1px solid #ffcccc;
+}
+
+/* Message de succès */
+.message.success {
+  background: #e6ffe6;
+  color: #00cc00;
+  border: 1px solid #ccffcc;
+}
+
+/* Informations de paiement sécurisé */
+.secure-payment-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 1.5rem;
+  color: #8898aa;
+  font-size: 13px;
+}
+
+/* Icône d'informations de paiement sécurisé */
+.secure-payment-info i {
+  font-size: 14px;
+}

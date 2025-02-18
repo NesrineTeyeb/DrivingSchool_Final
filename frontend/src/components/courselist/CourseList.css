@@ -1,0 +1,256 @@
+/* CourseList.css */
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #343a40;
+    margin-bottom: 20px;
+  }
+  
+  .courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+    padding: 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .course-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .course-image-container {
+    width: 100%;
+    margin: 1rem 0 2rem 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .course-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .course-image-container:hover .course-image {
+    transform: scale(1.05);
+  }
+  
+  .course-content {
+    text-align: left;
+    padding: 15px;
+  }
+  
+  .course-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .course-description {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    white-space: pre-line;
+    text-align: left;
+    padding-left: 15px;
+  }
+  
+  .course-description p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .course-description ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    margin: 12px 0;
+    font-size: 18px;
+  }
+  
+  .course-description li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .pagination-button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease;
+  }
+  
+  .pagination-button:disabled {
+    background: #bdc3c7;
+    cursor: not-allowed;
+  }
+  
+  .pagination-button:not(:disabled):hover {
+    background: #2980b9;
+  }
+  
+  .page-info {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+  }
+  
+  .no-courses {
+    text-align: center;
+    color: #666;
+    font-size: 1.2rem;
+    padding: 2rem;
+  }
+  
+  .text-center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Ajoute un espacement entre les boutons */
+  }
+  
+  .btn {
+    padding: 10px 20px; /* Réduction de la hauteur des boutons */
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+    min-width: 100px; /* Fixe une largeur minimale raisonnable */
+    max-width: 200px; /* Limite la largeur maximale pour éviter l'étirement */
+    text-align: center;
+  }
+  
+  .btn-primary {
+    background: #007bff;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background: #0056b3;
+  }
+  
+  .btn-success {
+    background: #28a745;
+    border: none;
+  }
+  
+  .btn-success:hover {
+    background: #1e7e34;
+  }
+  
+  /* Pagination buttons */
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .btn-pagination {
+    padding: 10px 15px; /* Ajustement de la hauteur sans élargir les boutons */
+    font-size: 18px;
+    border-radius: 5px;
+    min-width: 100px; /* Largeur minimale fixe pour uniformiser */
+    max-width: 150px; /* Empêche les boutons de devenir trop larges */
+    transition: 0.3s;
+    text-align: center;
+  }
+  
+  .btn-pagination:hover {
+    opacity: 0.8;
+  }
+  
+  .practice-button {
+    background: #27ae60;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(39, 174, 96, 0.2);
+  }
+  
+  .practice-button:hover {
+    background: #219a52;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(39, 174, 96, 0.3);
+  }
+  
+  .practice-button i {
+    margin-right: 0.5rem;
+  }
+  
+  .mt-4 {
+    margin-top: 2rem;
+  }
+  
+  .text-center {
+    text-align: center;
+  }

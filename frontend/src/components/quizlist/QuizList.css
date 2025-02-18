@@ -1,0 +1,35 @@
+/* Conteneur principal */
+.quiz-list-container {
+  margin-top: 40px;
+}
+
+/* Titre de la liste */
+.quiz-list-title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Carte de quiz avec effet de transition */
+.quiz-card {
+  transition: transform 0.2s ease-in-out;
+  border: none;
+}
+
+.quiz-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Personnalisation du bouton */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  font-weight: 600;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}

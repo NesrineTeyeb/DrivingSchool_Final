@@ -1,0 +1,55 @@
+/* Page de formulaire */
+.contact-form-container {
+  background-color: #f9f9f9;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1200px; /* Limite la largeur du formulaire */
+  margin: 0 auto; /* Centrer le formulaire */
+}
+
+/* Formulaire */
+.contact-form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.contact-form-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-form-control {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+/* .contact-form-button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  } */
+.contact-form-button {
+  background-color: #ca811a;
+  cursor: pointer;
+  border: none;
+  width: 20%; /* Largeur du bouton qui prend toute la largeur du parent */
+  padding: 20px 0px; /* Ajuste les espacements internes */
+  font-size: 18px; /* Taille de la police */
+  border-radius: 5px; /* Bord arrondi */
+}
+.contact-form-button:hover {
+  background-color: #f3a333;
+}
+
+/* Alerte de succès */
+.success-alert {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,34 @@
+.navbar{
+    padding:0px !important;
+    
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  padding:0px !important;
+
+}
+
+.navbar-brand img {
+  margin-right: 20px; /* Ajustez la valeur selon vos besoins */
+}
+.navbar-brand span {
+  color: #343a40; /* Dark color for links */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  font-weight: bold;
+  color: #142d4c; /* Dark color for links */
+  font-size: 19px;
+  font-family: Garamond ;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #f3a333; /* Dark hover effect */
+}
+.navbar-dark .navbar-nav .nav-link.active-link {
+  color: #f3a333; /* Couleur au survol et lorsqu'actif */
+}
+.navbar-brand span:hover {
+  color: #f3a333; /* Dark hover effect */
+}

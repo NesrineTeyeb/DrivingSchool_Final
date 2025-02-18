@@ -1,0 +1,217 @@
+/* Global Styles */
+
+/* Main Container */
+.formationSection {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  padding: 0 20px;
+}
+
+/* Description Section */
+.descriptionItem {
+  max-width: 1200px;
+  padding: 40px;
+  margin-left: 40px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 12px;
+  text-align: center;
+  animation: fadeInUp 1s ease-out;
+}
+
+.descriptionItem h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.descriptionItem p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.descriptionItem button {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  background: #ca811a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.descriptionItem button:hover {
+  background: #f3a333;
+  transform: scale(1.05);
+}
+
+/* Image Section */
+.descriptionImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.descriptionImage img {
+  width: 60%;
+  height: auto;
+  border-radius: 12px;
+  animation: briskAppear 0.8s ease-out;
+  object-fit: cover;
+}
+
+/* Global Container Styles */
+.globalContainer {
+  padding: 4rem 6rem;
+  background: #fff;
+}
+
+/* License B Section Styles */
+.licenseBSection {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 3rem;
+  margin-bottom: 3rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.licenseBSection:hover {
+  transform: translateY(-5px);
+}
+
+.descriptionItem-licenseB {
+  flex: 1;
+  padding: 2rem;
+}
+
+.descriptionItem-licenseB h1 {
+  font-size: 2rem;
+  color: #2d3436;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.descriptionItem-licenseB p {
+  font-size: 1.1rem;
+  color: #636e72;
+  line-height: 1.7;
+}
+
+.descriptionImage-licenseB {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.descriptionImage-licenseB img {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.descriptionImage-licenseB img:hover {
+  transform: scale(1.05);
+}
+
+.globalContainer > button {
+  display: block;
+  margin: 3rem auto;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  background: #ca811a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.globalContainer > button:hover {
+  background: #f3a333;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes briskAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .formationSection {
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .licenseBSection {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .descriptionItem {
+    margin-bottom: 2rem;
+    margin-left: 0;
+  }
+
+  .globalContainer {
+    padding: 2rem;
+  }
+
+  .descriptionImage img {
+    width: 80%;
+  }
+
+  .descriptionImage-licenseB img {
+    max-width: 100%;
+    height: auto;
+  }
+}

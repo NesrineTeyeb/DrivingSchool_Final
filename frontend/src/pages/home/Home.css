@@ -1,0 +1,102 @@
+/* Styles généraux */
+body {
+    /* display: flex; */
+    font-family: "Arial", sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  /* Bannière */
+  .banner {
+    /* background: linear-gradient(to right, #142d4c, #0056b3); */
+    background: #142d4c;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border-bottom: #ca811a;
+    width: 90%; /* Augmente la largeur de la bannière */
+    margin: 0 auto ; /* Centre la bannière horizontalement */
+    max-width: 1400px; /* Limite la taille maximale sur grand écran */
+  }
+  
+  .banner h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ca811a
+
+  }
+  
+  .banner p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .banner a {
+    margin: 5px;
+    color: white
+  }
+  .btn{
+    background-color: #ca811a 
+  }  
+  .btn:hover{
+    background-color: #f3a333
+  } 
+
+  /*Section "Formations" */
+  #formations{
+    /* background-color: #ffffff; */
+    padding: 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  
+  }
+  .formations{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap:20px
+  }
+  .formation-items{
+    background-color: white; /* Couleur de fond */
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 150px; /* Largeur minimale pour éviter que ça soit trop petit */
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+
+  }
+
+
+  
+  /* Section "About Us" */
+  #about-us {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Témoignages */
+  .card {
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  
+  /* Pied de page */
+  footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+  
